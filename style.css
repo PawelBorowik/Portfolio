@@ -449,7 +449,7 @@ h3 {
 }
 
 .first .text p {
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding-bottom: 50px;
 
 }
@@ -494,6 +494,12 @@ h3 {
 }
 
 @media (orientation: landscape) and (min-width: 1023px) {
+    .first .text p {
+        font-size: 1.4rem;
+        padding-bottom: 50px;
+
+    }
+
     .first .quotation p {
 
         font-size: 2rem;
