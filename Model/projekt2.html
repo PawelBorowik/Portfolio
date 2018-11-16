@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nieuport 80E1</title>
+    <link href="dist/css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+
+        <div class="tablink" onclick="openPage('Desc', this, 'transparent')" id="defaultOpen">Opis samolotu</div>
+        <div class="tablink" onclick="openPage('Doc', this, 'transparent')">Dokumentacja</div>
+        <div class="tablink" onclick="openPage('Bild', this, 'transparent')">Budowa</div>
+        <div class="tablink" onclick="openPage('Galery', this, 'transparent')">Galeria modelu</div>
+    </nav>
+
+    <section id="Desc" class="tabcontent">
+        <h3>Nieuport 80E1</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non vel animi debitis aliquid! Harum
+            ipsam repellendus quae saepe facilis similique qui provident, porro laudantium in sequi iure pariatur
+            aliquid.
+        </p>
+
+        <a href="imgs/Nieuport 80 01.jpg" data-lightbox="image-1" data-title="Nieuport 80"><img src="imgs/Nieuport 80 01min.jpg" alt="miniatura"></a>
+        <h3>W lotnictwie polskim</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non vel animi debitis aliquid! Harum
+            ipsam repellendus quae saepe facilis similique qui provident, porro laudantium in sequi iure pariatur
+            aliquid.
+        </p>
+        <a href="imgs/Nieuport 80 01.jpg" data-lightbox="image-1" data-title="Nieuport 80"><img src="imgs/Nieuport 80 01min.jpg" alt="miniatura"></a>
+    </section>
+
+    <section id="Doc" class="tabcontent">
+        <h3>Nieuport 80 E1 nr 9606</h3>
+        <p>Model będzie przedstawiał samolot on 9606, który został zakupiony....</p>
+        <div class="picture">
+
+            <a href="imgs/Nieuport_23_nr.14.png" data-lightbox="image-2" data-title="Polski Nieuport 80"><img src="imgs/Nieuport_23_nr.14 min.png" alt="miniatura"></a>
+
+            <a href="imgs/Nieuport_80_E2_14_nr._9609.png" data-lightbox="image-2" data-title="Nieuport 80"><img src="imgs/Nieuport_80_E2_14_nr._9609 min.png" alt="miniatura"></a>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eius esse tempora impedit, quibusdam sint amet
+            inventore rem laborum ad mollitia animi nesciunt? Sunt voluptas adipisci nam, aut nihil ratione?</p>
+
+
+
+        <img src="imgs/a1.gif" alt="malowanie">
+
+    </section>
+
+    <section id="Bild" class="tabcontent">
+        <h3>Budowa prototypu modelu</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem repudiandae deserunt a saepe sit minima
+            mollitia. Alias velit aliquam ex? Ducimus accusamus blanditiis quidem, iure quas velit architecto magnam
+            magni..</p>
+        <article>
+            <div> <a href="imgs/Bild/04.jpg" data-lightbox="image-3" data-title="Prototyp modelu"><img src="imgs/Bild/04min.png" alt="miniatura"></a></div>
+            <div> <a href="imgs/Bild/05.jpg" data-lightbox="image-3" data-title="Prototyp modelu"><img src="imgs/Bild/05min.png" alt="miniatura"></a></div>
+            <div> <a href="imgs/Bild/06.jpg" data-lightbox="image-3" data-title="Prototyp modelu"><img src="imgs/Bild/06min.png" alt="miniatura"></a></div>
+            <div> <a href="imgs/Bild/07.jpg" data-lightbox="image-3" data-title="Prototyp modelu"><img src="imgs/Bild/07min.png" alt="miniatura"></a></div>
+            <div> <a href="imgs/Bild/08.jpg" data-lightbox="image-3" data-title="Prototyp modelu"><img src="imgs/Bild/08min.png" alt="miniatura"></a></div>
+            <div> <a href="imgs/Bild/09.jpg" data-lightbox="image-3" data-title="Prototyp modelu"><img src="imgs/Bild/09min.png" alt="miniatura"></a></div>
+            <div> <a href="imgs/Bild/11.jpg" data-lightbox="image-3" data-title="Prototyp modelu"><img src="imgs/Bild/11min.png" alt="miniatura"></a></div>
+            <div> <a href="imgs/Bild/12.jpg" data-lightbox="image-3" data-title="Prototyp modelu"><img src="imgs/Bild/12min.png" alt="miniatura"></a></div>
+
+
+        </article>
+
+    </section>
+
+    <section id="Galery" class="tabcontent">
+        <h3>Galeria gotowego modelu</h3>
+        <p>Work in progress...</p>
+    </section>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+
+    <script>
+        function openPage(pageName, elmnt, color) {
+
+            const tabcontent = document.querySelectorAll("section");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            const tablinks = document.querySelectorAll(".tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+        lightbox.option({
+            'albumLabel': "Zdjęcie %1 z %2"
+
+        })
+    </script>
+
+</body>
+
+</html>

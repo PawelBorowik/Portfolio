@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* Set height of body and the document to 100% */
+body,
+html {
+    width: 80vw;
+    height: 100%;
+    margin: 20px auto;
+    font-family: Arial;
+}
+
+body {
+    background-image: url(bgc.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100vw;
+
+
+}
+
+
+
+.tablink {
+
+    background-color: rgba(52, 53, 53, 0.6);
+    color: white;
+    float: left;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    height: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tablink:hover {
+    background-color: rgba(15, 15, 15, 0.5);
+}
+
+
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+
+}
+
+h3 {
+    letter-spacing: 1px;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 150%;
+    padding: 10px 50px;
+}
+
+#Desc a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.picture {
+    display: flex;
+
+    justify-content: space-around;
+}
+
+#Doc img {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+}
+
+
+
+#Desc {
+    background-color: rgba(23, 96, 105, 0.6)
+}
+
+#Doc {
+    background-color: rgba(82, 99, 7, 0.6)
+}
+
+#Bild {
+    background-color: rgba(121, 57, 57, 0.6)
+}
+
+#Galery {
+    background-color: rgba(70, 50, 117, 0.6)
+}
+
+#Bild article {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 50px auto;
+    justify-content: space-around;
+
+}
