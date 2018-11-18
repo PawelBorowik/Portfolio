@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -15,11 +15,8 @@
             position: fixed;
             left: 20%;
             right: 20%;
-
-            width: 20%;
-
+            width: 50%;
             cursor: pointer;
-            /* background-color: #000; */
         }
 
         .img1 {
@@ -46,8 +43,8 @@
             padding-top: 100px;
             left: 0;
             top: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             overflow: scroll;
             background-color: rgba(0, 0, 0, 0.9);
 
@@ -86,10 +83,28 @@
             cursor: pointer;
         }
 
-        @media only screen and (max-width: 700px) {
-            .modal-content {
-                width: 100%;
+        @media (orientation: landscape) {
+            body {
+                max-height: 100vh;
             }
+
+            img {
+                width: 30%;
+
+            }
+        }
+
+        @media (orientation: landscape) and (min-width: 1023px) {
+            img {
+                width: 25%;
+
+            }
+
+            #img01 {
+                width: 90%;
+                max-width: 900px;
+            }
+
         }
     </style>
 </head>
