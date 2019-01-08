@@ -1,0 +1,72 @@
+body {
+  font-family: 'Work Sans', sans-serif; }
+
+.navbar {
+  font-size: 1.2rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3; }
+  .navbar .title {
+    font-size: 2rem; }
+  .navbar .nav-link:hover {
+    background-color: #8368ce; }
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #222;
+    position: absolute; }
+    .navbar .title {
+      font-size: 0.7rem;
+      letter-spacing: 2px; }
+    .navbar .nav-link:hover {
+      border-bottom: none; } }
+#showcase {
+  position: relative;
+  background-image: url("../images/front-view.jpg");
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
+  #showcase .darkercover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  #showcase .header {
+    z-index: 2; }
+  #showcase #btnbook {
+    font-size: 1.4rem;
+    padding: 10px 30px;
+    border-radius: 2rem;
+    letter-spacing: 2px; }
+
+@media (max-width: 768px) {
+  #showcase .hostel {
+    font-size: 1rem; }
+  #showcase #btnbook {
+    font-size: 1rem;
+    padding: 10px 30px;
+    border-radius: 2rem;
+    letter-spacing: 2px; } }
+.secend .icon {
+  padding: 10px 30%; }
+
+footer {
+  height: 150px;
+  background-color: #222;
+  padding: 0 20px; }
+  footer .social {
+    line-height: 150px;
+    color: white;
+    font-size: 3rem;
+    float: right; }
+
+/*# sourceMappingURL=custom.css.map */

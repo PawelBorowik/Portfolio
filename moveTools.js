@@ -86,6 +86,12 @@ $(document).on('scroll', function () {
     if (valueScroll > a3FromTop + a3Height / 2 - windowHeight) {
         $a3.addClass('active');
     }
+    const $a4 = $('.a4');
+    const a4FromTop = $a4.offset().top;
+    const a4Height = $a4.height();
+    if (valueScroll > a4FromTop + a4Height / 2 - windowHeight) {
+        $a4.addClass('active');
+    }
 
 
 
